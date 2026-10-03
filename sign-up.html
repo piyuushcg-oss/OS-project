@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Checkout Section -->
+    <main class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <div class="checkout-layout">
+
+            <!-- Left Side: Checkout Form -->
+            <section class="checkout-form">
+
+                <form action="#" method="post">
+
+                    <h2>Shipping Address</h2>
+
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        aria-label="Full Name"
+                        required
+                    >
+
+                    <textarea
+                        placeholder="Address"
+                        aria-label="Address"
+                        rows="2"
+                        required
+                    ></textarea>
+
+                    <div class="input-row">
+                        <input
+                            type="text"
+                            placeholder="City"
+                            aria-label="City"
+                            required
+                        >
+
+                        <input
+                            type="text"
+                            placeholder="PIN Code"
+                            aria-label="PIN Code"
+                            inputmode="numeric"
+                            required
+                        >
+                    </div>
+
+                    <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        aria-label="Phone Number"
+                        required
+                    >
+
+                    <h2 class="payment-heading">Payment Method</h2>
+
+                    <div class="payment-options">
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                                checked
+                            >
+                            Credit / Debit Card
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="upi"
+                            >
+                            UPI
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cod"
+                            >
+                            Cash on Delivery
+                        </label>
+                    </div>
+
+                    <button type="submit" class="place-order">
+                        Place Order
+                    </button>
+
+                </form>
+            </section>
+
+            <!-- Right Side: Order Summary -->
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="product">
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=120&h=120&fit=crop"
+                        alt="Wrist watch"
+                    >
+
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <span>$3.00</span>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img
+                        src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=120&h=120&fit=crop"
+                        alt="Black watch"
+                    >
+
+                    <div class="product-info">
+                        <p>Product Phone</p>
+                        <span>$5.00</span>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img
+                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=120&h=120&fit=crop"
+                        alt="Smartphone"
+                    >
+
+                    <div class="product-info">
+                        <p>Product Weight</p>
+                        <span>$7.00</span>
+                    </div>
+                </div>
+
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$138.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>$0.00</span>
+                    </div>
+
+                    <div class="summary-row total">
+                        <strong>Total</strong>
+                        <strong>$27.00</strong>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+</html>
